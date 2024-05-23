@@ -10,7 +10,7 @@ import { ChevronRight, ChevronLeft } from "lucide-react";
 import Toc from "./toc";
 import Link from "next/link";
 import { useContext } from "react";
-import { TopicContext } from "../layout";
+import { TopicContext } from "../topic-provider";
 
 interface ContentPageProps {
   params: { slug: string[] }; // slug has values like: ["system-design", "presentation"]

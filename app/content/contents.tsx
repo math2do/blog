@@ -3,7 +3,7 @@
 import React, { useContext } from "react";
 import Link from "next/link";
 import { ContentMetaDataType } from "@/content";
-import { TopicContext } from "./layout";
+import { TopicContext } from "./topic-provider";
 import { usePathname } from "next/navigation";
 
 interface ContentListProps {

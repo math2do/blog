@@ -4,17 +4,8 @@ import MaxWidthWrapper from "@/components/max-widht-wrapper";
 import ContentList from "./contents";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { contentMetaData } from "@/content";
-import { useState, createContext } from "react";
-
-type TopicContextProps = {
-  selected: string;
-  setSelected: React.Dispatch<React.SetStateAction<string>>;
-};
-
-const TopicContext = createContext<TopicContextProps>({
-  selected: "",
-  setSelected: () => {},
-});
+import { TopicContext } from "./topic-provider";
+import { useState } from "react";
 
 export default function RootLayout({
   children,
