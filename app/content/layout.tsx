@@ -11,7 +11,7 @@ type TopicContextProps = {
   setSelected: React.Dispatch<React.SetStateAction<string>>;
 };
 
-export const TopicContext = createContext<TopicContextProps>({
+const TopicContext = createContext<TopicContextProps>({
   selected: "",
   setSelected: () => {},
 });
