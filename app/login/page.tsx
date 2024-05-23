@@ -8,20 +8,10 @@ import {
   CardTitle,
   CardHeader,
   CardDescription,
-  CardFooter,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Mail } from "lucide-react";
-import { login } from "../actions";
-import { useSearchParams } from "next/navigation";
-import { redirect } from "next/navigation";
 import LoginForm from "@/components/login-form";
 
-const LoingPage = () => {
-  const searchParams = useSearchParams();
-  const redirectTo = searchParams.get("from");
-  console.log("RedirectTo", redirectTo);
-
+const LoginPage = () => {
   return (
     <MaxWidthWrapper className="mt-20 flex items-center justify-center">
       <Card className="w-[350px]">
@@ -32,7 +22,7 @@ const LoingPage = () => {
           </CardDescription>
         </CardHeader>
         <CardContent className="flex justify-center">
-          <LoginForm redirectTo={redirectTo} />
+          <LoginForm />
         </CardContent>
         {/* <CardFooter className="flex justify-center">
           <Button variant="link">
@@ -44,4 +34,4 @@ const LoingPage = () => {
   );
 };
 
-export default LoingPage;
+export default LoginPage;
