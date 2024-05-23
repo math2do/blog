@@ -52,7 +52,7 @@ const ContentLayout = ({ params }: ContentPageProps) => {
         </div>
 
         {/* next and prev navigation  */}
-        <div className="mt-10 flex justify-between">
+        <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-between">
           <Button
             variant="outline"
             className={`${currIndex == 0 ? "invisible" : ""}`}
