@@ -1,6 +1,6 @@
 "use client";
 
-import MaxWidthWrapper from "@/components/max-widht-wrapper";
+import MaxWidthWrapper from "@/components/max-width-wrapper";
 import ContentList from "./contents";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { contentMetaData } from "@/content";

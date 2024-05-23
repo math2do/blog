@@ -1,6 +1,6 @@
 "use client";
 
-import MaxWidthWrapper from "@/components/max-widht-wrapper";
+import MaxWidthWrapper from "@/components/max-width-wrapper";
 import React from "react";
 import {
   Card,

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import MaxWidthWrapper from "@/components/max-widht-wrapper";
+import MaxWidthWrapper from "@/components/max-width-wrapper";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";

@@ -1,6 +1,6 @@
 import React from "react";
 import { siteConfig } from "@/config/site";
-import MaxWidthWrapper from "./max-widht-wrapper";
+import MaxWidthWrapper from "./max-width-wrapper";
 import ExternalLink from "./external-link";
 
 const SiteFooter = () => {

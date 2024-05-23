@@ -5,7 +5,7 @@ import { Icons } from "@/components/svg-icons";
 import { siteConfig } from "@/config/site";
 import ThemeToggler from "@/components/theme-toggler";
 import { Separator } from "@/components/ui/separator";
-import MaxWidthWrapper from "./max-widht-wrapper";
+import MaxWidthWrapper from "./max-width-wrapper";
 import React from "react";
 import MobileNav from "./mobile-nav";
 import { CommandMenu } from "./commend-menu";
