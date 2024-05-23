@@ -1,25 +1,19 @@
 ## Getting Started
 
-Clone this project and rename the project to your liking.
+for serving md content install following packages
 
-This is a NEXT.js template project with preconfigured packages. The project is created with
+Checkout the documentation: [Docs](https://contentlayer.dev/docs/getting-started-cddd76b7)
 
+```sh
+npm install contentlayer
 ```
-npx create-next-app@latest blog --typescript --tailwind --eslint
+
+force install for now
+
+```sh
+npm install --force next-contentlayer
 ```
 
-Following Packages/Libraries are pre-configured in this template.
+TODO
 
-- tailwindcss
-- typescript
-- eslint
-- prettier
-- shadecn/ui
-- google fonts
-- lucid-react icons
-
-Run the development server:
-
-```bash
-npm run dev
-```
+- Remove the content layer issue.
