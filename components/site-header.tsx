@@ -15,7 +15,7 @@ const SiteHeader = async () => {
   return (
     <section className="sticky top-0 z-50 w-full backdrop-blur-xl backdrop-opacity-100">
       <MaxWidthWrapper>
-        <nav className="flex w-full items-center px-4 md:px-0">
+        <nav className="flex w-full items-center px-4 py-1 sm:py-0 md:px-0">
           <Link href="/" className="hidden md:block">
             <div className="flex cursor-pointer items-end text-xl">
               <Terminal className="h-full w-full" />
