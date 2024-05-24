@@ -44,7 +44,9 @@ const SiteHeader = async () => {
                   <Icons.gitHub className="h-4 w-4" />
                 </a>
               </Button>
-              <ThemeToggler />
+              <div className="hidden sm:inline-block">
+                <ThemeToggler />
+              </div>
             </div>
             <Separator
               orientation="vertical"

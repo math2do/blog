@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import { HomeIcon } from "lucide-react";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -21,6 +21,13 @@ const CustomBreadcrumb = ({ items }: BreadcrumbProps) => {
   return (
     <Breadcrumb>
       <BreadcrumbList>
+        <BreadcrumbItem>
+          <BreadcrumbLink href="/">
+            <HomeIcon className="h-4 w-4" />
+          </BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbSeparator />
+
         <BreadcrumbItem>
           <BreadcrumbLink href="/content">Notes</BreadcrumbLink>
         </BreadcrumbItem>

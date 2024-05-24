@@ -32,16 +32,20 @@ const MobileNav = () => {
           <SheetTitle className="space-y-4">
             <div className="flex cursor-pointer items-end text-base">
               <Terminal className="w-5" />
-              <h1 className="font-bold">
+              <Link
+                href="/"
+                className="font-bold"
+                onClick={() => setOpen(false)}
+              >
                 <span className="text-primary">math</span>
                 <span>2do</span>
-              </h1>
+              </Link>
             </div>
             <Separator className="h-[0.1px] bg-muted" />
           </SheetTitle>
           <SheetDescription></SheetDescription>
         </SheetHeader>
-        <ScrollArea className="h-[calc(100vh-3.5rem)] px-4 pb-10">
+        <ScrollArea className="h-[calc(100vh-3.5rem)] pb-10">
           {contentMetaData.map((content, index) => {
             return (
               <Link
