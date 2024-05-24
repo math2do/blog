@@ -17,7 +17,9 @@ export default async function Home() {
   return (
     <MaxWidthWrapper>
       <PageHeader>
-        <PageHeaderHeading>Welcome To math2do</PageHeaderHeading>
+        <PageHeaderHeading>
+          Welcome To <span className="text-primary">math</span>2do
+        </PageHeaderHeading>
         <PageHeaderDescription>{siteConfig.description}</PageHeaderDescription>
         <PageActions>
           <Link
