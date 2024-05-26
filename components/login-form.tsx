@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
-import { Mail } from "lucide-react";
+import Image from "next/image";
 import { login } from "@/app/actions";
 
 const LoginForm = ({ redirectTo }: { redirectTo: string }) => {
@@ -10,8 +10,15 @@ const LoginForm = ({ redirectTo }: { redirectTo: string }) => {
         await login("google", redirectTo);
       }}
     >
-      <Button type="submit">
-        <Mail className="mr-2 h-4 w-4" /> Login with Email
+      <Button type="submit" variant="outline" className="flex gap-3">
+        <Image
+          src="https://authjs.dev/img/providers/google.svg"
+          className="h-6 w-6"
+          alt="google image"
+          height={24}
+          width={24}
+        />
+        Sign in with Google
       </Button>
     </form>
   );
