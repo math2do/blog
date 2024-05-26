@@ -30,13 +30,27 @@ export async function middleware(request: NextRequest) {
 
   // with login, only configured users can go to content
   // Todo: users should come from configuration
-  // if (
-  //   session &&
-  //   session.user &&
-  //   session.user.email !== "mathura.dakshana15@gmail.com"
-  // ) {
-  //   return NextResponse.json({ message: "Not authorized" }, { status: 403 });
-  // }
+  let emails = "mathura.dakshana15@gmail.com";
+  if (process.env.AUTHORIZED_EMAILS) {
+    emails = process.env.AUTHORIZED_EMAILS;
+  }
+
+  if (
+    session &&
+    session.user &&
+    session.user.email &&
+    contains(emails.split(","), session.user.email)
+  ) {
+    return NextResponse.json({ message: "Not authorized" }, { status: 403 });
+  }
+}
+
+function contains(emails: string[], email: string): boolean {
+  const matchedEmail = emails.find((curEmail) => curEmail == email);
+  if (matchedEmail) {
+    return true;
+  }
+  return false;
 }
 
 export const config = {
