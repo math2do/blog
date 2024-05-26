@@ -30,16 +30,10 @@ export async function middleware(request: NextRequest) {
 
   // with login, only configured users can go to content
   // Todo: users should come from configuration
-  let emails = "mathura.dakshana15@gmail.com";
-  if (process.env.AUTHORIZED_EMAILS) {
-    emails = process.env.AUTHORIZED_EMAILS;
-  }
-
   if (
     session &&
     session.user &&
-    session.user.email &&
-    contains(emails.split(","), session.user.email)
+    session.user.email !== "mathura.dakshana15@gmail.com"
   ) {
     return NextResponse.json({ message: "Not authorized" }, { status: 403 });
   }
