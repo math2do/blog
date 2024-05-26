@@ -10,15 +10,8 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import LoginForm from "@/components/login-form";
-import { useSearchParams } from "next/navigation";
 
 const LoginPage = () => {
-  const searchParams = useSearchParams();
-  let redirectTo = searchParams.get("from");
-  if (!redirectTo) {
-    redirectTo = "/";
-  }
-
   return (
     <MaxWidthWrapper className="mt-20 flex items-center justify-center">
       <Card className="w-[350px]">
@@ -29,7 +22,7 @@ const LoginPage = () => {
           </CardDescription>
         </CardHeader>
         <CardContent className="flex justify-center">
-          <LoginForm redirectTo={redirectTo} />
+          <LoginForm redirectTo={"/content/getting-started"} />
         </CardContent>
         {/* <CardFooter className="flex justify-center">
           <Button variant="link">
