@@ -3,11 +3,11 @@ import { Button } from "./ui/button";
 import { Mail } from "lucide-react";
 import { login } from "@/app/actions";
 
-const LoginForm = () => {
+const LoginForm = ({ redirectTo }: { redirectTo: string }) => {
   return (
     <form
       action={async () => {
-        await login("google");
+        await login("google", redirectTo);
       }}
     >
       <Button type="submit">

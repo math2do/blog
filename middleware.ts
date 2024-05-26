@@ -30,13 +30,13 @@ export async function middleware(request: NextRequest) {
 
   // with login, only configured users can go to content
   // Todo: users should come from configuration
-  if (
-    session &&
-    session.user &&
-    session.user.email !== "mathura.dakshana15@gmail.com"
-  ) {
-    return NextResponse.json({ message: "Not authorized" }, { status: 403 });
-  }
+  // if (
+  //   session &&
+  //   session.user &&
+  //   session.user.email !== "mathura.dakshana15@gmail.com"
+  // ) {
+  //   return NextResponse.json({ message: "Not authorized" }, { status: 403 });
+  // }
 }
 
 export const config = {
