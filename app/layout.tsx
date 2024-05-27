@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
-import { Inter, Roboto, Cantarell, Poppins } from "next/font/google";
+import { Inter, Roboto, Cantarell, Poppins, Open_Sans } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 
-const fontOption = Inter({
-  weight: ["400", "700"],
+const fontOption = Open_Sans({
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
   icons: "/header-icon.svg",
-  title: "Template App",
-  description: "Template App for other projects",
+  title: "math2do",
+  description: "notes on various topics for developers",
 };
 
 export default function RootLayout({

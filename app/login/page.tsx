@@ -1,7 +1,6 @@
-"use client";
-
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import React from "react";
+import type { Metadata } from "next";
 import {
   Card,
   CardContent,
@@ -10,6 +9,10 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import LoginForm from "@/components/login-form";
+
+export const metadata: Metadata = {
+  title: "Login | math2do",
+};
 
 const LoginPage = () => {
   return (

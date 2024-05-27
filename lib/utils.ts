@@ -14,3 +14,9 @@ export function capitialize(input: string): string {
     })
     .join(" ");
 }
+
+export async function sleep(s: number) {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve, s * 1000);
+  });
+}
