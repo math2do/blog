@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 
-const fontOption = Open_Sans({
-  weight: ["400", "500", "600", "700"],
+const fontOption = Inter({
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",

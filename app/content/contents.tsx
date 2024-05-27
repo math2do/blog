@@ -25,7 +25,7 @@ const ContentList = ({ contentMetaData }: ContentListProps) => {
                 setSelected(file.path);
               }}
               key={file.path}
-              className={`block w-full cursor-pointer text-[0.93rem] font-medium capitalize transition-all duration-300 hover:underline hover:underline-offset-4 ${file.path === pathname ? `text-foreground underline underline-offset-4` : "text-muted-foreground"}`}
+              className={`block w-full cursor-pointer text-[0.93rem] capitalize transition-all duration-300 hover:underline hover:underline-offset-4 ${file.path === pathname ? `text-foreground underline underline-offset-4` : "text-muted-foreground"}`}
             >
               {file.title.replaceAll("-", " ")}
             </Link>
